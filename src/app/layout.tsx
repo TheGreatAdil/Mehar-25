@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Anek_Malayalam } from "next/font/google";
 import Navbar from "@/components/Navbar";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+const anek = Anek_Malayalam({
+  variable: "--font-anek",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
+      <body className={`${anek.variable} antialiased`}>
         <Navbar />
         {children}
       </body>
