@@ -1,8 +1,6 @@
-"use client";
-
 import Image from "next/image";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
-import { previousImages } from "@/lib/constants";
+import { previousImages1, previousImages2, events } from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -49,9 +47,9 @@ export default function Home() {
         className="w-full md:h-screen mx-auto pt-24 md:pt-32"
         id="#previous"
       >
-        <div className="w-full mx-auto">
-          <InfiniteSlider className="h-fit" duration={10}>
-            {previousImages.map((image, i) => (
+        <div className="w-full mx-auto shadow-xl">
+          <InfiniteSlider className="h-fit" duration={20}>
+            {previousImages1.map((image, i) => (
               <div
                 key={i}
                 className="relative w-32 h-32 md:w-48 md:h-48 mx-auto"
@@ -60,8 +58,7 @@ export default function Home() {
                   fill
                   src={image.src}
                   alt={image.alt}
-                  loading="lazy"
-                  className="object-cover shadow-xl rounded-xl"
+                  className="object-cover rounded-xl"
                 />
               </div>
             ))}
@@ -74,9 +71,9 @@ export default function Home() {
           സാധിച്ചിട്ടുണ്ട്. ഈ ഒരു പത്തു വർഷ കാലയളവിൽ ഏകദേശം 4.5 കോടി രൂപ ഈ
           ഉദ്യമത്തിൽ നമ്മൾ ചിലവഴിക്കുക്കയുണ്ടായി.
         </p>
-        <div className="w-full mx-auto">
-          <InfiniteSlider className="h-fit" duration={10} reverse>
-            {previousImages.map((image, i) => (
+        <div className="w-full mx-auto shadow-xl">
+          <InfiniteSlider className="h-fit" duration={20} reverse>
+            {previousImages2.map((image, i) => (
               <div
                 key={i}
                 className="relative w-32 h-32 md:w-48 md:h-48 mx-auto"
@@ -85,8 +82,7 @@ export default function Home() {
                   fill
                   src={image.src}
                   alt={image.alt}
-                  loading="lazy"
-                  className="object-cover shadow-xl rounded-xl"
+                  className="object-cover rounded-xl"
                 />
               </div>
             ))}
@@ -114,7 +110,7 @@ export default function Home() {
             className="object-cover shadow-xl rounded-xl"
           />
         </div>
-        <p className="max-w-7xl px-4 md:px-16 mx-auto mt-16 md:mt-8 text-2xl md:text-2xl text-center font-[family-name:var(--font-anek)] drop-shadow-lg">
+        <p className="max-w-7xl px-4 md:px-16 mx-auto mt-8 text-md md:text-2xl text-center font-[family-name:var(--font-anek)] drop-shadow-lg">
           മെഹർ പത്താം വാർഷികത്തോടനുബന്ധിച്ച്, കമ്മിറ്റി പുതുതായി തീരുമാനമെടുത്ത
           പദ്ധതിയാണ് സഹപാഠിക്ക് ഒരു സ്നേഹക്കൂട്. പ്രസ്തുത പദ്ധതിക്ക് കീഴിൽ
           കോളേജ് വിദ്യാർത്ഥികൾക്കിടയിൽ നിന്നും ദുരിതം അനുഭവിക്കുന്ന
@@ -126,6 +122,35 @@ export default function Home() {
           പദ്ധതിയിട്ടിട്ടുള്ളത്. പ്രസ്തുത പദ്ധതിയിലേക്ക് നിങ്ങളാൽ കഴിയുന്ന
           സംഭാവനകൾ അർപ്പിക്കുക.
         </p>
+      </section>
+
+      <section className="w-full mx-auto pt-24" id="#events">
+        <h2 className="text-center text-4xl md:text-6xl font-bold text-yellow-200 drop-shadow-xl">
+          FUND RAISING EVENTS
+        </h2>
+        <div className="w-fit mx-auto my-8 grid md:grid-cols-2 gap-4 md:gap-8">
+          {events.map((event, i) => (
+            <div
+              key={i}
+              className="relative w-72 h-72 md:w-[28rem] md:h-80 lg:w-[34rem] lg:h-96 rounded-xl border-background mx-auto hover:scale-105 transition-all duration-500 shadow-lg"
+            >
+              <Image
+                fill
+                src={event.src}
+                alt={event.alt}
+                className="object-cover rounded-xl"
+              />
+              <a
+                href={event.link}
+                className="absolute w-full h-full rounded-xl bg-gradient-to-t from-black"
+              />
+              <div className="w-full absolute p-4 bottom-0 flex justify-between items-end">
+                <h3 className="font-bold text-2xl">{event.title}</h3>
+                <p>{event.date}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </>
   );

@@ -20,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${anek.variable} antialiased`}>
+      <body
+        className={`${anek.variable} font-[family-name:var(--font-anek)] antialiased`}
+      >
         <Navbar />
         {children}
       </body>
