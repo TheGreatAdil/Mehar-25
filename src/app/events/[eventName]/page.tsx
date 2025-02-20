@@ -7,7 +7,7 @@ export default async function Page({
 }: {
   params: { eventName: string };
 }) {
-  const { eventName } = params;
+  const { eventName } = await params;
   const currentEvent = events.find((event) => event.name === eventName);
 
   if (!currentEvent) {
