@@ -6,9 +6,10 @@ type Props = {
   params: {
     eventName: string;
   };
+  searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export default function page({ params }: Props) {
+export default async function Page({ params }: Props) {
   const { eventName } = params;
   const currentEvent = events.find((event) => event.name === eventName);
 
