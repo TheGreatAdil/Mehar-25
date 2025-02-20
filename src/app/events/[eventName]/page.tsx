@@ -2,11 +2,9 @@ import Image from "next/image";
 import { events } from "@/lib/constants";
 import { redirect } from "next/navigation";
 
-export default async function Page({
-  params,
-}: {
-  params: { eventName: string };
-}) {
+type EventParams = Promise<{ eventName: string }>;
+
+export default async function Page({ params }: { params: EventParams }) {
   const { eventName } = await params;
   const currentEvent = events.find((event) => event.name === eventName);
 
@@ -37,7 +35,7 @@ export default async function Page({
               <Image
                 fill
                 src={image}
-                alt={currentEvent.title + " photos"}
+                alt={currentEvent.title.toLowerCase() + " photos"}
                 className="object-cover rounded-xl"
                 loading="lazy"
               />
