@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { previousImages } from "@/lib/constants";
-import { motion } from "motion/react";
 
 export default function Home() {
   return (
