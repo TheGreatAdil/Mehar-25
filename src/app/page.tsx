@@ -59,6 +59,7 @@ export default function Home() {
                   src={image.src}
                   alt={image.alt}
                   className="object-cover rounded-xl"
+                  loading="lazy"
                 />
               </div>
             ))}
@@ -83,6 +84,7 @@ export default function Home() {
                   src={image.src}
                   alt={image.alt}
                   className="object-cover rounded-xl"
+                  loading="lazy"
                 />
               </div>
             ))}
@@ -136,12 +138,13 @@ export default function Home() {
             >
               <Image
                 fill
-                src={event.src}
-                alt={event.alt}
+                src={event.images[0]}
+                alt={event.title.toLowerCase()}
                 className="object-cover rounded-xl"
+                loading="lazy"
               />
               <a
-                href={event.link}
+                href={"/events/" + event.name}
                 className="absolute w-full h-full rounded-xl bg-gradient-to-t from-black"
               />
               <div className="w-full absolute p-4 bottom-0 flex justify-between items-end">
@@ -150,6 +153,46 @@ export default function Home() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="w-full h-screen mx-auto pt-24" id="#contact">
+        <h2 className="text-center text-4xl md:text-6xl font-bold text-yellow-200 drop-shadow-xl">
+          CONTACT
+        </h2>
+
+        <div className="w-fit mx-auto my-16 grid grid-cols-2 gap-8">
+          <div className="grid gap-4">
+            <div className="relative w-32 h-32 md:w-96 md:h-96">
+              <Image
+                fill
+                src={"/donate qr.png"}
+                alt={"donation qr code"}
+                className="object-cover rounded-xl"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div className="grid h-96 text-2xl text-left">
+            <h3 className="text-6xl text-yellow-200">BANK DETAILS</h3>
+
+            <h4 className="mt-4 leading-none">Account Number</h4>
+            <p className="text-yellow-200 text-3xl leading-none">
+              15980100172564
+            </p>
+
+            <h4 className="mt-2 leading-none">Account Holder Name</h4>
+            <p className="text-yellow-200 text-3xl leading-none">
+              MRS BUSHRA K K
+            </p>
+
+            <h4 className="mt-2 leading-none">IFSC Code</h4>
+            <p className="text-yellow-200 text-3xl leading-none">FDRL0001598</p>
+
+            <p className="mt-2 text-yellow-200 leading-none">
+              FEDERAL BANK MELATTUR BRANCH
+            </p>
+          </div>
         </div>
       </section>
     </>

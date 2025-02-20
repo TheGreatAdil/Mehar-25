@@ -83,30 +83,29 @@ export const previousImages2 = [
 export const events = [
     {
         title: "FOOD FEST",
+        description: "dummy description",
+        images: ["/events/foodfest1.jpg", "/events/foodfest1.jpg", "/events/foodfest1.jpg", "/events/foodfest1.jpg"],
         date: "10/10/2024",
-        src: "/events/foodfest1.jpg",
-        alt: "food fest",
-        link: "/foodfest"
+        name: "food-fest"
     },
     {
         title: "SHOOT OUT",
+        description: "dummy description",
+        images: ["/events/foodfest1.jpg", "/events/foodfest1.jpg", "/events/foodfest1.jpg", "/events/foodfest1.jpg"],
         date: "10/10/2024",
-        src: "/events/foodfest1.jpg",
-        alt: "food fest",
-        link: "/foodfest"
+        name: "shoot-out"
     },
     {
         title: "MEHANDI FEST",
+        images: ["/events/foodfest1.jpg", "/events/foodfest1.jpg", "/events/foodfest1.jpg", "/events/foodfest1.jpg"],
         date: "10/10/2024",
-        src: "/events/foodfest1.jpg",
-        alt: "food fest",
-        link: "/foodfest"
+        name: "mehandi-fest"
     },
     {
         title: "BIRIYANI CHALLENGE",
+        description: "dummy description",
+        images: ["/events/foodfest1.jpg", "/events/foodfest1.jpg", "/events/foodfest1.jpg", "/events/foodfest1.jpg"],
         date: "10/10/2024",
-        src: "/events/foodfest1.jpg",
-        alt: "food fest",
-        link: "/biriyani-challenge"
+        name: "biriyani-challenge"
     },
 ]

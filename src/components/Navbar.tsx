@@ -12,11 +12,11 @@ const NavItems = () => {
     },
     {
       title: "EVENTS",
-      link: "/events",
+      link: "/#events",
     },
     {
-      title: "TEST",
-      link: "#test",
+      title: "CONTACT",
+      link: "/#contact",
     },
   ];
 
