@@ -2,14 +2,11 @@ import Image from "next/image";
 import { events } from "@/lib/constants";
 import { redirect } from "next/navigation";
 
-interface PageProps {
-  params: {
-    eventName: string;
-  };
-  searchParams: Record<string, string | string[] | undefined>;
-}
-
-export default async function Page({ params }: PageProps) {
+export default async function Page({
+  params,
+}: {
+  params: { eventName: string };
+}) {
   const { eventName } = params;
   const currentEvent = events.find((event) => event.name === eventName);
 
