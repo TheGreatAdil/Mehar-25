@@ -11,12 +11,4 @@ export const previousImages = [
         src: "/images/IMG_20221118_162729.jpg",
         alt: "old mehar picture"
     },
-    {
-        src: "",
-        alt: "old mehar picture"
-    },
-    {
-        src: "",
-        alt: "old mehar picture"
-    },
 ]

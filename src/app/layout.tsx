@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 
 const anek = Anek_Malayalam({
   variable: "--font-anek",
+  subsets: ["malayalam"],
 });
 
 export const metadata: Metadata = {
