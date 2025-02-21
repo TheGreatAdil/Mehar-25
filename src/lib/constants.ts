@@ -39,7 +39,7 @@ export const previousImages1 = [
 
 export const previousImages2 = [
     {
-        src:"/previous/brides1.jfif",
+        src:"/previous/brides1.jpg",
         alt:"old mehar brides"
     },
     {
@@ -47,11 +47,11 @@ export const previousImages2 = [
         alt:"old stage photo"
     },
     {
-        src:"/previous/couple4.jfif",
+        src:"/previous/couple4.jpg",
         alt:"old mehar couple"
     },
     {
-        src:"/previous/bridesmaid.jfif",
+        src:"/previous/bridesmaid.jpg",
         alt:"bridesmaids"
     },
     {
@@ -63,7 +63,7 @@ export const previousImages2 = [
         alt:"nikkah photo"
     },
     {
-        src:"/previous/grouppic3.jfif",
+        src:"/previous/grouppic3.jpg",
         alt:"old stage photo"
     },
     {
