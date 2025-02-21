@@ -106,7 +106,7 @@ export default function Home() {
         <div className="relative w-80 h-56 md:w-[36rem] md:h-80 mx-auto mt-6">
           <Image
             fill
-            src={"/images/IMG_20221118_162729.jpg"}
+            src={"/previous/IMG_20221118_162729.jpg"}
             alt={"sahapadik oru snehakood picture"}
             loading="lazy"
             className="object-cover shadow-xl rounded-xl"
