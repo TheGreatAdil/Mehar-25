@@ -161,9 +161,9 @@ export default function Home() {
           CONTACT
         </h2>
 
-        <div className="w-fit mx-auto my-16 grid grid-cols-2 gap-8">
+        <div className="w-fit mx-auto my-8 md:my-16 grid md:grid-cols-2 gap-8">
           <div className="grid gap-4">
-            <div className="relative w-32 h-32 md:w-96 md:h-96">
+            <div className="relative w-72 h-72 mx-auto md:w-96 md:h-96">
               <Image
                 fill
                 src={"/donate qr.png"}
@@ -173,23 +173,25 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="grid h-96 text-2xl text-left">
-            <h3 className="text-6xl text-yellow-200">BANK DETAILS</h3>
+          <div className="grid h-96 text-xl px-16 md:px-0 text-left">
+            <h3 className="font-semibold text-4xl md:text-6xl text-yellow-200">
+              BANK DETAILS
+            </h3>
 
-            <h4 className="mt-4 leading-none">Account Number</h4>
-            <p className="text-yellow-200 text-3xl leading-none">
+            <h4 className="md:mt-4 leading-none">Account Number</h4>
+            <p className="text-yellow-200 text-2xl leading-none">
               15980100172564
             </p>
 
-            <h4 className="mt-2 leading-none">Account Holder Name</h4>
-            <p className="text-yellow-200 text-3xl leading-none">
+            <h4 className="md:mt-2 leading-none">Account Holder Name</h4>
+            <p className="text-yellow-200 text-2xl leading-none">
               MRS BUSHRA K K
             </p>
 
-            <h4 className="mt-2 leading-none">IFSC Code</h4>
-            <p className="text-yellow-200 text-3xl leading-none">FDRL0001598</p>
+            <h4 className="md:mt-2 leading-none">IFSC Code</h4>
+            <p className="text-yellow-200 text-2xl leading-none">FDRL0001598</p>
 
-            <p className="mt-2 text-yellow-200 leading-none">
+            <p className="md:mt-2 text-yellow-200 leading-none">
               FEDERAL BANK MELATTUR BRANCH
             </p>
           </div>

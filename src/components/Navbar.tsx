@@ -8,15 +8,15 @@ const NavItems = () => {
   const links = [
     {
       title: "HOME",
-      link: "/#home",
+      link: "#home",
     },
     {
       title: "EVENTS",
-      link: "/#events",
+      link: "#events",
     },
     {
       title: "CONTACT",
-      link: "/#contact",
+      link: "#contact",
     },
   ];
 
