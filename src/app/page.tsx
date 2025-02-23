@@ -1,6 +1,11 @@
 import Image from "next/image";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
-import { previousImages1, previousImages2, events } from "@/lib/constants";
+import {
+  previousImages1,
+  previousImages2,
+  events,
+  organizers,
+} from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -92,7 +97,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full md:h-screen mx-auto pt-24" id="#sahapadi">
+      <section className="w-full md:h-screen mx-auto pt-24">
         <div className="relative h-28 md:h-48 mx-auto drop-shadow-md">
           <Image
             src={"/sahapadi logo.png"}
@@ -106,8 +111,8 @@ export default function Home() {
         <div className="relative w-80 h-56 md:w-[36rem] md:h-80 mx-auto mt-6">
           <Image
             fill
-            src={"/previous/IMG_20221118_162729.jpg"}
-            alt={"sahapadik oru snehakood picture"}
+            src={"/home.jpg"}
+            alt={"home image"}
             loading="lazy"
             className="object-cover shadow-xl rounded-xl"
           />

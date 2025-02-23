@@ -26,7 +26,7 @@ const NavItems = () => {
         <a
           key={i}
           href={link.link}
-          className="tracking-widest font-bold bg-gradient-to-r from-orange-300 via-yellow-200 to-orange-300 bg-clip-text text-transparent"
+          className="tracking-widest font-bold text-yellow-200 bg-clip-text text-transparent"
         >
           {link.title}
         </a>
