@@ -1,11 +1,6 @@
 import Image from "next/image";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
-import {
-  previousImages1,
-  previousImages2,
-  events,
-  organizers,
-} from "@/lib/constants";
+import { previousImages1, previousImages2, events } from "@/lib/constants";
 
 export default function Home() {
   return (
