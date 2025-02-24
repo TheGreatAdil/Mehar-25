@@ -1,6 +1,6 @@
 export const previousImages1 = [
     {
-        src: "/previous/WhatsApp Image 2023-04-03 at 23.34.57.jpg",
+        src: "/previous/buy2.jpg",
         alt: "old mehar picture"
     },
     {
