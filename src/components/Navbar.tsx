@@ -15,6 +15,10 @@ const NavItems = () => {
       link: "#events",
     },
     {
+      title: "ORGANIZERS",
+      link: "#organizers",
+    },
+    {
       title: "CONTACT",
       link: "#contact",
     },
@@ -26,7 +30,7 @@ const NavItems = () => {
         <a
           key={i}
           href={link.link}
-          className="tracking-widest font-bold text-yellow-200 bg-clip-text text-transparent"
+          className="tracking-widest font-bold text-yellow-200"
         >
           {link.title}
         </a>
@@ -36,10 +40,10 @@ const NavItems = () => {
 };
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed w-full h-16 px-2 flex justify-between z-30 backdrop-blur-sm shadow-xl font-[family-name:var(--font-anek)]">
+    <header className="fixed w-full h-16 px-2 flex justify-between z-30 bg-background md:bg-transparent md:backdrop-blur-sm shadow-xl font-[family-name:var(--font-anek)]">
       <div className="w-48 pt-2">
         <Image width={150} height={150} src={"/logo.png"} alt="mehar 25 logo" />
       </div>
@@ -49,12 +53,12 @@ export default function Navbar() {
 
       <div className="md:hidden flex items-center px-2">
         <button onClick={() => setIsOpen((prevIsOpen) => !prevIsOpen)}>
-          {isOpen ? <MenuIcon size={32} /> : <XIcon size={32} />}
+          {isOpen ? <XIcon size={32} /> : <MenuIcon size={32} />}
         </button>
         <nav
           className={`${
-            isOpen ? "hidden" : ""
-          } absolute w-full h-screen top-0 left-0 flex flex-col gap-4 justify-start items-center text-xl px-4 mt-16 bg-black/50`}
+            isOpen ? "" : "hidden"
+          } absolute w-full h-screen top-0 left-0 flex flex-col gap-6 justify-start items-center text-xl p-8 mt-16 backdrop-blur-lg bg-background/25`}
         >
           <NavItems />
         </nav>

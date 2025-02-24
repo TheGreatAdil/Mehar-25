@@ -20,7 +20,7 @@ export default function Home() {
         />
       </div>
 
-      <main className="w-full h-screen mx-auto pt-32" id="#home">
+      <main className="w-full h-screen mx-auto pt-32" id="home">
         <div className="relative h-32 md:h-44 mx-auto drop-shadow-xl">
           <Image
             src={"/anniversary logo.png"}
@@ -50,7 +50,7 @@ export default function Home() {
 
       <section
         className="w-full md:h-screen mx-auto pt-24 md:pt-32"
-        id="#previous"
+        id="previous"
       >
         <div className="w-full mx-auto shadow-xl">
           <InfiniteSlider className="h-fit" duration={20}>
@@ -131,7 +131,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="w-full mx-auto pt-24" id="#events">
+      <section className="w-full mx-auto pt-24" id="events">
         <h2 className="text-center text-4xl md:text-6xl font-bold text-yellow-200 drop-shadow-xl">
           FUND RAISING EVENTS
         </h2>
@@ -161,7 +161,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full mx-auto pt-24 px-4" id="#organizers">
+      <section className="w-full mx-auto pt-24 px-4" id="organizers">
         <h2 className="text-center text-4xl md:text-6xl font-bold text-yellow-200 drop-shadow-xl">
           ORGANIZERS
         </h2>
@@ -191,7 +191,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full h-screen mx-auto pt-24" id="#contact">
+      <section className="w-full h-screen mx-auto pt-24" id="contact">
         <h2 className="text-center text-4xl md:text-6xl font-bold text-yellow-200 drop-shadow-xl">
           CONTACT
         </h2>
