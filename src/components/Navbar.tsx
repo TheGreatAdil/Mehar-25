@@ -2,9 +2,13 @@
 
 import { MenuIcon, XIcon } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, Dispatch, SetStateAction } from "react";
 
-const NavItems = ({ setIsOpen }: { setIsOpen: Function }) => {
+const NavItems = ({
+  setIsOpen,
+}: {
+  setIsOpen: Dispatch<SetStateAction<boolean>>;
+}) => {
   const links = [
     {
       title: "HOME",
