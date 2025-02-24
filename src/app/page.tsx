@@ -49,7 +49,7 @@ export default function Home() {
       </main>
 
       <section
-        className="w-full md:h-screen mx-auto pt-24 md:pt-32"
+        className="w-full md:h-fit md:min-h-screen mx-auto pt-24 md:pt-32"
         id="previous"
       >
         <div className="w-full mx-auto shadow-xl">
@@ -97,7 +97,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full md:h-screen mx-auto pt-24">
+      <section className="w-full md:h-fit md:min-h-screen mx-auto pt-24">
         <div className="relative h-28 md:h-48 mx-auto drop-shadow-md">
           <Image
             src={"/sahapadi logo.png"}
