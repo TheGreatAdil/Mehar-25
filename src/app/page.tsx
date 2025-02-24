@@ -1,6 +1,11 @@
 import Image from "next/image";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
-import { previousImages1, previousImages2, events } from "@/lib/constants";
+import {
+  previousImages1,
+  previousImages2,
+  events,
+  organizers,
+} from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -150,6 +155,36 @@ export default function Home() {
               <div className="w-full absolute p-4 bottom-0 flex justify-between items-end">
                 <h3 className="font-bold text-2xl">{event.title}</h3>
                 <p>{event.date}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="w-full mx-auto pt-24 px-4" id="#organizers">
+        <h2 className="text-center text-4xl md:text-6xl font-bold text-yellow-200 drop-shadow-xl">
+          ORGANIZERS
+        </h2>
+        <div className="w-fit mx-auto my-8 grid md:grid-cols-2 gap-4 md:gap-8">
+          {organizers.map((organizer, i) => (
+            <div
+              key={i}
+              className="w-80 md:w-[34rem] h-fit md:h-60 grid md:grid-cols-3 gap-5 md:gap-20 bg-neutral-100 p-3 rounded-xl "
+            >
+              <div className="relative w-full h-64 md:w-48 md:h-full">
+                <Image
+                  fill
+                  src={organizer.image}
+                  alt={organizer.name}
+                  loading="lazy"
+                  className="object-cover shadow-xl rounded-xl"
+                />
+              </div>
+              <div className="h-full flex flex-col justify-between text-black md:col-span-2">
+                <div className="grid">
+                  <h3 className="text-lg font-semibold">{organizer.name}</h3>
+                  <p className="text-neutral-">{organizer.position}</p>
+                </div>
               </div>
             </div>
           ))}

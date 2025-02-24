@@ -129,4 +129,47 @@ Mehar 2025-ന്റെ പ്രധാന പ്രത്യേകത – ഒ�
 വൈവാഹിക ജീവിതത്തിലേക്ക് പ്രവേശിക്കുന്ന ഇണകൾക്ക് സമ്പൂർണ്ണ സന്തോഷവും സമൃദ്ധിയും ഉണ്ടായിരിക്കട്ടെ എന്ന പ്രാർത്ഥനയോടെയും, Mehar 2025-ന് ഹൃദയപൂർവ്വമായ ആശംസകളും അർപ്പിക്കുന്നു.
 `
     },
+    {
+        name: "Prof. K. K. Syed Abid Hussain Thangal, MLA",
+        position: "General Secretary",
+        image: "/organizers/abid hussain thangal.jpg",
+        message: "",
+    },
+    {
+        name: "Jb. Sayed Munavarali Shihab Thangal",
+        position: "Treasurer",
+        image: "/organizers/sayed shihab thangal.jpg",
+        message: "",
+    },
+    {
+        name: "C. K. Zubair",
+        position: "Adminstration Manager",
+        image: "/organizers/zubair.jpg",
+        message: "",
+    },
+    {
+        name: "Dr. J. Hussain",
+        position: "Principal",
+        image: "/organizers/hussain.jpg",
+        message: "",
+    },
+    {
+        name: "Shamsudheen V. P",
+        position: "Assistant Professor",
+        image: "/organizers/shamsudheen.jpg",
+        message: "",
+    },
+    {
+        name: "C. V. Razal",
+        position: "Student Convenor",
+        image: "/organizers/razal.jpg",
+        message: "",
+    },
+    {
+        name: "Jasim M",
+        position: "Student Coordinator",
+        image: "/organizers/jasim.png",
+        message: "",
+    },
+    
 ]
