@@ -1,6 +1,6 @@
 export const previousImages1 = [
     {
-        src: "/previous/buy2.jpg",
+        src: "/previous/buy 2.jpg",
         alt: "old mehar picture"
     },
     {
@@ -85,14 +85,14 @@ export const events = [
         title: "FOOD FEST",
         description: "മെഹർ 25ന്റെ ഫണ്ട്‌ സമാഹരണത്തിന്റെ ഭാഗമായി കോളേജിൽ സങ്കടിപ്പിച്ച ഫുഡ്‌ ഫസ്റ്റ് വലിയ വിജയമാവുകയും ____ലാഭ വിഹിതമായി കിട്ടുകയും ചെയ്തു.",
         images: ["/events/foodfest1.jpg", "/events/foodfest2.jpg", "/events/foodfest3.jpg", "/events/foodfest4.jpg"],
-        date: "10/10/2024",
+        date: "28/01/2025",
         name: "food-fest"
     },
     {
         title: "ICE SHOP",
         description: "മെഹർ 25 ന്റെ ഭാഗമായി സ്പോർട്സ് ദിനത്തോട് അനുബന്ധിച്ച് തുടങ്ങിയ ഐസും പീഡിയ വലിയ വിജയമാവുകയും ഏകദേശം ____രൂപ സ്വരൂപിക്കുകയും ചെയ്തു.",
         images: ["/events/ice1.jpg", "/events/ice2.jpg", "/events/ice3.jpg", "/events/ice4.jpg"],
-        date: "10/10/2024",
+        date: "13/02/2025",
         name: "shoot-out"
     },
     {
