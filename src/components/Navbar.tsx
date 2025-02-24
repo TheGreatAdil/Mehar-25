@@ -4,7 +4,7 @@ import { MenuIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
-const NavItems = () => {
+const NavItems = ({ setIsOpen }: { setIsOpen: Function }) => {
   const links = [
     {
       title: "HOME",
@@ -31,6 +31,9 @@ const NavItems = () => {
           key={i}
           href={link.link}
           className="tracking-widest font-bold text-yellow-200"
+          onClick={() => {
+            setIsOpen(false);
+          }}
         >
           {link.title}
         </a>
@@ -48,7 +51,7 @@ export default function Navbar() {
         <Image width={150} height={150} src={"/logo.png"} alt="mehar 25 logo" />
       </div>
       <nav className="hidden h-full md:flex items-center gap-4 md:gap-12 md:px-4 text-sm">
-        <NavItems />
+        <NavItems setIsOpen={setIsOpen} />
       </nav>
 
       <div className="md:hidden flex items-center px-2">
@@ -60,7 +63,7 @@ export default function Navbar() {
             isOpen ? "" : "hidden"
           } absolute w-full h-screen top-0 left-0 flex flex-col gap-6 justify-start items-center text-xl p-8 mt-16 backdrop-blur-lg bg-background/25`}
         >
-          <NavItems />
+          <NavItems setIsOpen={setIsOpen} />
         </nav>
       </div>
     </header>
